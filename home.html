@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home Page</title>
+<meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin:0;
+ background-image:url("shoes2.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  
+}
+
+.navbar {
+  overflow: hidden;
+  background-color:#33D1FF;
+
+
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 50px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+.dropdown{  
+   padding-left:570px;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 50px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color:#33ACFF;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 50px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 50px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.footer{ background-color:#33D1FF;
+margin-top: 593px;
+}
+.footer{
+  width: 100%;
+  position: fixed;
+  font-size: 12px;
+  left: 0;
+  bottom: 0;
+  color:black;
+   padding: 7px;
+}
+.logo{
+  padding-top:0px;
+  height: 2px;
+  padding-left:10px;
+  font-size: 22px;
+  font-weight: 900;
+  font-style: italic;
+  position: relative;
+  top:4px;
+  left: 15px;
+}
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <div class="logo">Shoes Shop</div>
+  
+  <div class="dropdown">
+    <input type="button" value="Home" class="dropbtn">
+    <div class="dropdown-content">
+      <a href="menshoe.html">Male Shoes</a>
+      <a href="femaleshoe.html">Female shoes</a>
+      
+    </div>
+  </div> 
+<a href="#home">Offer</a>
+<a href="#">Contact us</a>
+<a href="#news">About us</a>
+<a href="prologin.html">Logout</a>
+  
+</div>
+<div class="footer">Developed By Vicky Phoolchand Sahu<br>
+Copyright By 2022@,All rights are reserved</div>
+</body>
+</html>

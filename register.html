@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration form</title>
+	<script type="text/javascript">
+		function Registration()
+		{
+		var uname=document.getElementById("t1").value;
+		var email=document.getElementById("t2").value;
+		var usern=document.getElementById("t3").value;
+		var pwd=document.getElementById("t4").value;
+		var cpwd=document.getElementById("t5").value;
+
+		var letter_ex=/^[A-Za-z]+$/;
+		var pwd_ex="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$";
+		var email_ex= /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+		if (uname=="")
+		{
+			alert("Please enter your name");
+		} 
+
+		else if(!letter_ex.test(uname))
+		{
+			alert("Name feild required only alphabet");
+		}
+
+		else if(email=="")
+		{
+			alert("Please enter your EmailId");
+		}
+
+		else if(!email_ex.test(email))
+		{
+			alert("invalid email");
+		}
+		
+		else if(usern=="")
+		{
+			alert("Please enter  username");
+		}
+
+		else if(!letter_ex.test(usern))
+		{
+			alert("user name feild required alphabet");
+		}
+
+		else if(pwd=="")
+		{
+			alert("Please enter password");
+		}
+
+		else if(!pwd_ex.test(pwd))
+		{
+			alert("password feild required min 8");
+		}
+
+		else if(!cpwd=="")
+		{
+			alert("Please enter confirm password");
+		}
+
+		else if(pwd!=cpwd)
+		{
+			alert("password not match");
+		}
+
+		else
+		{
+			alert("Thank you for login");
+			window.location="loginpw.html";
+		}
+	}
+
+
+	</script>
+</head>
+<body>
+	<hr>
+<h3>Create Your Account</h3>
+<div>
+	<div>
+		<table>
+			<tr>
+				<td>Enter Name:</td><td><input type="text" id="t1"  placeholder="Enter user here"></td>
+			</tr>
+
+			<tr>
+				<td>Enter EmailId:</td><td><input type="email" id="t2" placeholder="Enter Email Id here"></td>
+			</tr>
+
+			<tr>
+				<td>Enter Username:</td><td><input type="text" id="t3" placeholder="Enter user name here"></td>
+			</tr>
+
+			<tr>
+				<td>Enter Password:</td><td><input type="password" id="t4" placeholder="Enter Password here"></td>
+			</tr>
+
+			<tr>
+				<td>Enter Confirm Password:</td><td><input type="password" id="t5" placeholder="Enter Password here"></td>
+			</tr>
+
+			<tr>
+				<td><input type="reset" value="Reset" ></td><td><input type="submit" value="Create Account" onclick="Registration()"></td>
+			</tr>
+
+		</table>
+	</div>
+</div>
+</body>
+</html>
